@@ -1,5 +1,4 @@
 const ShowAge = (showAge, setShowAge) => {
-    console.log("clicked")
     setShowAge(!showAge)
 }
 

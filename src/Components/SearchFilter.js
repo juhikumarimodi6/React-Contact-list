@@ -1,15 +1,24 @@
 import React from "react";
+import ContactList from "./ContactList";
 import './SearchFilter.css'
 
-const SearchFilter = () => {
+const SearchFilter = ({results}) => {
 
-    const [name, setName] = React.useState("")
+    const [nameSearch, setNameSearch] = React.useState("")
 
     const EnteredName = (event) => {
-        setName(event.target.value)
+        setNameSearch(event.target.value)
+    }
+
+    const search = (results) => {
+        return (results.filter(
+            user => user.name.first.toLowerCase().includes(nameSearch.toLowerCase()) 
+                    || user.email.toLowerCase().includes(nameSearch.toLowerCase()) 
+        ))
     }
 
     return (
+        <>
         <input
             type = "text"
             placeholder="Search Here..."
@@ -17,6 +26,10 @@ const SearchFilter = () => {
             onChange={EnteredName}
         >
         </input>
+        <ContactList 
+            results = {search(results)}
+        />
+        </>
     )
 }
 
