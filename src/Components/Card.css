@@ -26,38 +26,26 @@
     margin-left: 1%;
   }
 
-  .name-container, .email-container, .phone-container {
+  .name-container, .email-container, .phone-container, .age-container {
     display: flex;
   }
 
-  .name, .email, .phone{
+  .name, .email, .phone, .age{
     overflow-wrap: break-word;
     width:25vw;
   }
 
-  .age-container {
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .age-container button {
+  .age-button{
     background-color:rgb(165, 101, 151);
     border-radius: 10%;
+    margin-top: 5%;
+    width:20vw;
   }
   
   .hideAge {
     display:none;
   }
 
-  .showAge {
-    margin-left: 2%;
-    color: black;
-    border:solid;
-    padding:0% 1%;
-    border-radius: 10%;
-    background-color: white;
-  }
   
   @media only screen and (max-width:400px) {
     .card {
@@ -69,4 +57,7 @@
     .name, .email, .phone{
         width:50vw;
       }
+    .age-button{
+      width:50vw;
+    }
   }

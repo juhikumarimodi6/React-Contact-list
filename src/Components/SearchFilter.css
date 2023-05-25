@@ -2,3 +2,9 @@
     border:solid;
     font-size: large;
 }
+
+@media only screen and (max-width:400px) {
+    .search-box {
+        width:60vw;
+    }
+}

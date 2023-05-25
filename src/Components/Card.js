@@ -26,10 +26,11 @@ const Card = ({Id,Image, Name, Email, Phone, Age}) => {
                     <div><b>Phone: </b></div>
                     <div className="phone">{Phone}</div>
                 </div>
-                <div className="age-container">
-                    <button onClick = {handleShowAge}><b>Show Age: </b></button>
-                    <div className={showAge ? "showAge" : "hideAge"}><b>{Age}</b></div>
+                <div className={showAge ?"age-container" : "hideAge age-container"}>
+                    <div><b>Age: </b></div>
+                    <div className="age">{Age}</div>
                 </div>
+                <button className="age-button" onClick = {handleShowAge}><b>{showAge ? 'Hide Age' : 'Show Age'} </b></button>
             </div>
         </div>
     )
