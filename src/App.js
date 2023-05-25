@@ -11,24 +11,32 @@ function App() {
   const [nameSearch, setNameSearch] = React.useState("")
   const [next, setNext] = React.useState(false);
   const [loading, setLoading] = React.useState(true);
+  const [error, setError] = React.useState(false);
 
   const getUsers = async () => {
+    //use try and catch. It helps to understand if any error happens while making api call.
+    // always use async and await while making api call.
     try {
       setLoading(true);
-      const response = await fetch('https://randomuser.me/api/?results=10')
+      //results can be set to 100 or any other number. Here 10 indicates max 10 user 
+      // data will be fetched at a time.
+      const response = await fetch('https://randomuser.me/api/?results=10');
+      // const response = await fetch('https://randomuser.me/api/?results=10');
+      setResults([]);
       const data = await response.json();
       setResults(data.results)
       setLoading(false);
     } catch (err) {
+      setError(true);
       setLoading(false);
     }
-    // const response = await fetch('https://randomuser.me/api/?results=10')
-    // const data = await response.json();
-    // setResults(data.results)
   }
 
+  //using useEffect with [dependency]. Always use useEffect when api call is made. 
+  //any chhange made in dependency array will execute the code written inside useEffect.
   React.useEffect(() => {
-    // setResults([]);
+    //reset the data and then after the new data is fetched, set data again. 
+    //This helps in refreshing the page and data completely.
     getUsers();
   }, [next])
 
@@ -42,6 +50,7 @@ function App() {
           results = {results}
           nameSearch = {nameSearch}
           loading = {loading}
+          error = {error}
         />
         <Next 
           next = {next}

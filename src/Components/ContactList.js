@@ -3,7 +3,7 @@ import Card from "./Card";
 import SearchFunction from "./SearchFunction";
 import './ContactList.css'
 
-const ContactList = ({results, nameSearch, loading}) => {
+const ContactList = ({results, nameSearch, loading, error}) => {
 
     const SearchResult = SearchFunction(results, nameSearch)
     const Length = SearchResult.length;
@@ -21,8 +21,9 @@ const ContactList = ({results, nameSearch, loading}) => {
                                 Age = {result.dob.age}
                         />
                 })}
-                {Length === 0 && !loading ? <h3>No Result Found!</h3> : ""}
-                {loading && <h3>Loading Please Wait...</h3>}
+                {Length === 0 && !loading && !error? <h3>No Result Found! (Press Next)</h3> : ""}
+                {loading && Length === 0 && !error? <h3>Loading Please Wait...</h3> : ""}
+                {error && <h3>Error Loading</h3>}
         </div>
     )
 }
