@@ -1,0 +1,73 @@
+
+.card {
+    border:black solid;
+    display: flex;
+    justify-content: center;
+    color:navy;
+    align-items: center;
+    margin:1%;
+    padding:2%;
+    border-radius: 5%;
+    width:80%;
+    background-color: rgb(146, 167, 100);
+  }
+  
+  .profile-photo {
+    border: solid;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    padding:2%;
+    margin-left: 1%;
+  }
+
+  .name-container, .email-container, .phone-container {
+    display: flex;
+  }
+
+  .name, .email, .phone{
+    overflow-wrap: break-word;
+    width:25vw;
+  }
+
+  .age-container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .age-container button {
+    background-color:rgb(165, 101, 151);
+    border-radius: 10%;
+  }
+  
+  .hideAge {
+    display:none;
+  }
+
+  .showAge {
+    margin-left: 2%;
+    color: black;
+    border:solid;
+    padding:0% 1%;
+    border-radius: 10%;
+    background-color: white;
+  }
+  
+  @media only screen and (max-width:400px) {
+    .card {
+        flex-direction: column;
+    }
+    .profile-photo {
+        width:5rem;
+    }
+    .name, .email, .phone{
+        width:50vw;
+      }
+  }
