@@ -6,4 +6,7 @@
     width:95%;
     background-color: rgb(163, 167, 180);
     margin: 3% 0%;
+    /* position: sticky;
+    z-index: 1;
+    top:3%; */
 }
