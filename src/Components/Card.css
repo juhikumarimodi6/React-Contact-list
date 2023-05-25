@@ -40,6 +40,7 @@
     border-radius: 10%;
     margin-top: 5%;
     width:20vw;
+    max-width: 150px;
   }
   
   .hideAge {
