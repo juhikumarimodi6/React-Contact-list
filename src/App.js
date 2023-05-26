@@ -40,6 +40,10 @@ function App() {
     getUsers();
   }, [next])
 
+  // if(loading) {
+  //   return <div>Loading Please wait...</div>
+  // }
+
   return (
     <div className="app-container">
         <Header />
