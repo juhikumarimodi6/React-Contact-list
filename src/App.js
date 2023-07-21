@@ -56,10 +56,11 @@ function App() {
           loading = {loading}
           error = {error}
         />
-        <Next 
-          next = {next}
-          setNext={setNext}
-        />
+        {!loading && <Next 
+                        next = {next}
+                        setNext={setNext}
+                      />
+        }
     </div>
   );
 }

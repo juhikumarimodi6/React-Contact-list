@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Contact List App
+![Contact List App Screenshot](ContactListApp-Screenshot-smallscreen.PNG)
+![Contact List App Screenshot](ContactListApp-Screenshot-responsive2.PNG)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Contact List App is a web application built with React that allows users to manage and view their contacts. The app integrates with an external API to fetch contact data dynamically. It provides features like a contact viewing, searching, showing contact age, responsive design, loading state, error handling and API pagination.
 
-In the project directory, you can run:
+## Functionality
+1. **API Integration**: The app integrates with the external API to fetch contact data in real-time. It uses Axios library for making HTTP requests to the API endpoints.
+2. **Loading State**: While fetching data from the API, the app displays a loading spinner to indicate that the contacts are being loaded.
+3. **Error Handling**: In case of any API request errors or failures, the app gracefully handles them and shows appropriate error messages to the user.
+4. **View Contacts**: The app displays the list of contacts fetched from the API in a user-friendly and organized manner. Each contact is represented with basic information such as name, phone number, and email address.
+5. **Search**: Users can use the search bar to find specific contacts based on their name or email address. The search function dynamically filters the contact list as the user types.
+6. **Show Contact Age**: When a user clicks on a particular contact show age button, the app shows the contact's age if it's available in the contact data.
+7. **Responsive Design**: The app is designed to be responsive and works well on various devices, including desktops, tablets, and smartphones.
+8. **API Pagination**: To optimize performance, the app implements API pagination. It fetches and displays contacts in smaller batches, reducing unnecessary data transfer and providing a smoother user experience.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository to your local machine.
+```
+git clone https://github.com/juhikumarimodi6/React-Contact-list.git
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Navigate to the project directory.
+```
+cd contact-list-app
+```
 
-### `npm test`
+3. Install dependencies using npm or yarn.
+```
+npm install
+```
+or
+```
+yarn install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Run the app locally.
+```
+npm start
+```
+or
+```
+yarn start
+```
 
-### `npm run build`
+5. Open your web browser and visit `http://localhost:3000` to access the app.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Demo
+Check out the [Demo Video](ContactList-video.webm).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
+- React.js v18.2
+- CSS
+- React Hooks (useState())
+- API fetch
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contributing
 
-### `npm run eject`
+Contributions to the Contact List App are welcome. If you find any issues or have suggestions for improvement, please create a new issue or submit a pull request.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contact
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For any questions or inquiries, please contact [juhikumarimodi6@gmail.com](mailto:your-email@example.com).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---

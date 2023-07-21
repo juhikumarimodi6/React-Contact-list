@@ -3,6 +3,7 @@
   padding:0px;
 }
 .app-container {
+  box-sizing: border-box;
   width:60vw;
   background-color: beige;
   display: flex;
@@ -10,7 +11,8 @@
   align-items: center;
   border: solid;
   margin:2% auto;
-  height: 90vh;
+
+  /* height: 90vh; */
 }
 
 @media only screen and (max-width: 800px){
