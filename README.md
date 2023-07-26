@@ -1,10 +1,24 @@
 # Contact List App
-![Contact List App Screenshot](ContactListApp-Screenshot-smallscreen.PNG)
-![Contact List App Screenshot](ContactListApp-Screenshot-responsive2.PNG)
 
 ## Overview
 
 The Contact List App is a web application built with React that allows users to manage and view their contacts. The app integrates with an external API to fetch contact data dynamically. It provides features like a contact viewing, searching, showing contact age, responsive design, loading state, error handling and API pagination.
+
+## Screenshots
+
+Contact List App screenshot for small screen:
+
+![Contact List App screenshot for small screen](ContactListApp-Screenshot-smallscreen.PNG)
+
+Contact List App Screenshot for tablet and large screen:
+
+![Contact List App Screenshot for tablet and large screen](ContactListApp-Screenshot-responsive2.PNG)
+
+## Demo
+Check out the Demo Video of Contact List app in action:
+
+[ContactList-video.webm](https://github.com/juhikumarimodi6/React-Contact-list/assets/71226446/f78406df-e086-4f7c-8576-d08e882ac564)
+
 
 ## Functionality
 1. **API Integration**: The app integrates with the external API to fetch contact data in real-time. It uses Axios library for making HTTP requests to the API endpoints.
@@ -48,8 +62,6 @@ yarn start
 
 5. Open your web browser and visit `http://localhost:3000` to access the app.
 
-## Demo
-Check out the [Demo Video](ContactList-video.webm).
 
 ## Technologies Used
 - React.js v18.2
